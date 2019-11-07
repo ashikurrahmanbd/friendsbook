@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.friendsbook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShafiqActivity"
+            android:label="About Shafiq"
+            android:parentActivityName=".FriendsActivity"
+            ></activity>
+        <activity android:name=".KamrulActivity"
+            android:label="About Kamrul"
+            android:parentActivityName=".FriendsActivity"
+            />
+        <activity
+            android:name=".MasudActivity"
+            android:label="About Masud"
+            android:parentActivityName=".FriendsActivity" />
+        <activity
+            android:name=".FriendsActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
